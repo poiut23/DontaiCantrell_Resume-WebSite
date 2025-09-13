@@ -14,6 +14,15 @@ section>h2 {
 }
 
 /* Professional Experience Section */
+#experience {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 section.experience-section {
     border-style: inset;
     border-width: 3px;
@@ -29,6 +38,15 @@ section.experience-section {
 
 
 /* Education Section */
+
+#education {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 section.education-section {
     border-style: inset;
     border-width: 3px;
@@ -43,6 +61,16 @@ section.education-section {
 }
 
 /* Projects Links */
+
+#projects {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
 section.projects-section {
     border-style: inset;
     border-width: 3px;
