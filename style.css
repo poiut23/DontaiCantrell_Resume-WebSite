@@ -119,7 +119,7 @@ section.skills-section {
     border-width: 2px;
     padding: 10px;
     margin: 15px 0;
-    box-shadow: #6CF2AE 0.1em 0.1em 5px 4px;
+    box-shadow: #6CF2AE 1px 1px 10px 1px;
 }
 
 td {
