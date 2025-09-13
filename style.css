@@ -88,6 +88,20 @@ section.skills-section {
     box-shadow: -5px -5px darkorchid;  
 }
 
+#readMoreBtn {
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 td {
     padding: 8px;
     border-bottom: 1px solid #ddd;
