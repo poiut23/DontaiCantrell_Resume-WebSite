@@ -1,0 +1,15 @@
+
+/* Coursework Links */
+a.coursework-list:link {
+    color: darkorchid;
+    text-decoration: none;
+}
+
+a.coursework-list:visited {
+    color: rgb(21, 96, 0);
+}
+
+a.coursework-list:hover {
+    color: rgb(231, 160, 255);
+    text-decoration: underline;
+}
