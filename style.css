@@ -6,6 +6,13 @@ body {
     color: #333;
 }
 
+section>h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-size-adjust: 150%;
+    text-decoration: wavy underline;
+}
+
 /* Professional Experience Section */
 section.experience-section {
     border-style: inset;
@@ -75,6 +82,14 @@ ul.list-style {
 
 
 /* Skills Section */
+#skills p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 
 #skills {
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -82,10 +97,7 @@ ul.list-style {
     margin-bottom: 10px;
 }
 
-section>h2 {
-    color: darkorchid;
-    text-align: center;
-}
+
 section.skills-section {
     border-style: inset;
     border-width: 3px;
