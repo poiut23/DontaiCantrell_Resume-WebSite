@@ -54,7 +54,7 @@ a.projects-list:link {
 }
 
 a.projects-list:visited {
-    color: rgb(21, 96, 0);
+    color: rgb(0, 0, 0);
 }
 
 a.projects-list:hover {
@@ -90,7 +90,7 @@ section.skills-section {
 
 #readMoreBtn {
     background-color: darkorchid;
-    color: white;
+    color: rgb(23, 23, 23);
     border: none;
     margin: 20px 0;
     padding: 10px 20px;
@@ -101,6 +101,18 @@ section.skills-section {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#readMoreBtn:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+#hiddenSkills {
+    border: inset;
+    border-width: 2px;
+    padding: 10px;
+    margin: 15px 0;
+    box-shadow: #6CF2AE 0.1em 0.1em 5px 4px;
 }
 
 td {
