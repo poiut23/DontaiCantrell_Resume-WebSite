@@ -75,6 +75,13 @@ ul.list-style {
 
 
 /* Skills Section */
+
+#skills {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 section.skills-section {
     border-style: inset;
     border-width: 3px;
