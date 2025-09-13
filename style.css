@@ -83,8 +83,17 @@ section.projects-section {
     box-shadow: -5px -5px darkorchid;
 }
 
+ul li {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #665544;
+    padding: 5px 0;
+}
+
 a.projects-list:link {
-    color: darkorchid;
+    color: rgb(68, 100, 120);
     text-decoration: none;
 }
 
@@ -96,17 +105,6 @@ a.projects-list:hover {
     color: rgb(231, 160, 255);
     text-decoration: underline;
 }
-
-ul.list-style {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px; /* Add some left padding for better alignment */
-    gap: 8px; /* Add space between list items */    
-    list-style-type: none; /* Use disc bullets */
-}
-
-
-
 
 
 /* Skills Section */
