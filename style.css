@@ -10,7 +10,7 @@ body {
 /* Projects Links */
 section.projects-section {
     border-style: inset;
-    border-width: 2px;
+    border-width: 3px;
     border-color: darkorchid;
     border-radius: 8px;
     background-color: #C5C5C5;
@@ -49,7 +49,7 @@ ul.list-style {
 /* Skills Section */
 section.skills-section {
     border-style: inset;
-    border-width: 2px;
+    border-width: 3px;
     border-color: darkorchid;
     border-radius: 8px;
     background-color: #C5C5C5;
@@ -58,4 +58,28 @@ section.skills-section {
     -moz-box-shadow: -5px -5px #ffffff;
     -webkit-box-shadow: -5px -5px #bdbdbd;
     box-shadow: -5px -5px darkorchid;  
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.skills-table th,
+table.skills-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table.skills-table th {
+    background-color: darkorchid;
+    color: white;
+}
+table.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
