@@ -41,3 +41,21 @@ ul.list-style {
     gap: 8px; /* Add space between list items */    
     list-style-type: none; /* Use disc bullets */
 }
+
+
+
+
+
+/* Skills Section */
+section.skills-section {
+    border-style: inset;
+    border-width: 2px;
+    border-color: darkorchid;
+    border-radius: 8px;
+    background-color: #C5C5C5;
+    margin: 20px 0;
+    padding: 15px;
+    -moz-box-shadow: -5px -5px #ffffff;
+    -webkit-box-shadow: -5px -5px #bdbdbd;
+    box-shadow: -5px -5px darkorchid;  
+}
