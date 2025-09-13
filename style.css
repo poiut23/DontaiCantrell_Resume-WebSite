@@ -1,3 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #333;
+}
+
 
 /* Projects Links */
 section.projects-section {
@@ -7,9 +15,9 @@ section.projects-section {
     border-radius: 8px;
     background-color: #C5C5C5;
     padding: 15px;
-    -moz-box-shadow: -5px -5px #777777;
-    -webkit-box-shadow: -5px -5px #777777;
-    box-shadow: -5px -5px #777777;
+    -moz-box-shadow: -5px -5px #ffffff;
+    -webkit-box-shadow: -5px -5px #bdbdbd;
+    box-shadow: -5px -5px darkorchid;
 }
 
 a.projects-list:link {
@@ -24,4 +32,12 @@ a.projects-list:visited {
 a.projects-list:hover {
     color: rgb(231, 160, 255);
     text-decoration: underline;
+}
+
+ul.list-style {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; /* Add some left padding for better alignment */
+    gap: 8px; /* Add space between list items */    
+    list-style-type: none; /* Use disc bullets */
 }
