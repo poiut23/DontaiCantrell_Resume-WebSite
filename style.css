@@ -9,8 +9,9 @@ body {
 section>h2 {
     color: rgb(0, 0, 0);
     text-align: center;
-    text-size-adjust: 150%;
+    text-size-adjust: 200%;
     text-decoration: wavy underline;
+    margin: 0 5px 0 5px;
 }
 
 /* Professional Experience Section */
