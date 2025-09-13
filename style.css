@@ -82,6 +82,10 @@ ul.list-style {
     margin-bottom: 10px;
 }
 
+section>h2 {
+    color: darkorchid;
+    text-align: center;
+}
 section.skills-section {
     border-style: inset;
     border-width: 3px;
@@ -123,19 +127,21 @@ section.skills-section {
 }
 
 td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+    padding: 0.8em;
+    border-bottom: 11px solid #ddd;
 }
 
 table.skills-table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
+    border: center;
+    margin: 20px auto;
 }
 
 table.skills-table th,
 table.skills-table td {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
 }
 
 table.skills-table th {
