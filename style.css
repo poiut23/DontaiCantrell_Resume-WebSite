@@ -1,15 +1,27 @@
 
-/* Coursework Links */
-a.coursework-list:link {
+/* Projects Links */
+section.projects-section {
+    border-style: inset;
+    border-width: 2px;
+    border-color: darkorchid;
+    border-radius: 8px;
+    background-color: #C5C5C5;
+    padding: 15px;
+    -moz-box-shadow: -5px -5px #777777;
+    -webkit-box-shadow: -5px -5px #777777;
+    box-shadow: -5px -5px #777777;
+}
+
+a.projects-list:link {
     color: darkorchid;
     text-decoration: none;
 }
 
-a.coursework-list:visited {
+a.projects-list:visited {
     color: rgb(21, 96, 0);
 }
 
-a.coursework-list:hover {
+a.projects-list:hover {
     color: rgb(231, 160, 255);
     text-decoration: underline;
 }
