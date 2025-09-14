@@ -201,15 +201,18 @@ table.skills-table tr:nth-child(even) {
 }
 
 /* Contact Section */
-    *.fa {
-        border-radius: 100px;
-        padding: 5px;
-        background-color: #6CF2AE;
-    }
-
 #contact h1{
     color: rgb(0, 0, 0);
     text-align: center;
     text-size-adjust: 200%;
     margin: 0 5px 0 5px;
 }
+
+
+/*Awesome font*/
+/* Contact Section */
+    *.fa {
+        border-radius: 100px;
+        padding: 5px;
+        background-color: #6CF2AE;
+    }
