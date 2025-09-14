@@ -1,3 +1,36 @@
+/* Neat contact info styling */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.08em;
+    background: #f7f7fa;
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 1px 4px rgba(127,61,149,0.07);
+}
+.contact-info li a {
+    color: #4B0082;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.contact-info li a:hover {
+    color: #2e0854;
+    text-decoration: underline;
+}
+.contact-info li address {
+    font-style: normal;
+    display: inline;
+}
 /* Fixed and styled header navigation */
 #header {
     position: fixed;
