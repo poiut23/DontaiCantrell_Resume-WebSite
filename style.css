@@ -101,7 +101,7 @@ ul li {
 }
 
 a.projects-list:link {
-    color: rgb(68, 100, 120);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -110,10 +110,15 @@ a.projects-list:visited {
 }
 
 a.projects-list:hover {
-    color: rgb(231, 160, 255);
+    color: rgb(127, 61, 149);
     text-decoration: underline;
 }
 
+a.projects-read-about:link {
+    color: rgb(45, 112, 154);
+    text-decoration: none;
+    font-size: 14px;
+}
 
 /* Skills Section */
 
