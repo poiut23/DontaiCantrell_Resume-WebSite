@@ -9,6 +9,15 @@ body {
 
 
 /*This will style the section headings */
+
+.resume-header>h1 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    text-size-adjust: 300%;
+        margin: 0 auto;
+        z-index: 10;
+}
 section>h2 {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -269,6 +278,28 @@ table.skills-table tr:nth-child(even) {
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
+.background-img-container {
+    position: relative;
+    display: inline-block;
+}
+.background-img-container .background-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.background-img-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #222;
+    font-size: 2.5em;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
 /* Transparent abstract background for header/profile info */
 .resume-header {
     position: relative;
@@ -276,6 +307,9 @@ table.skills-table tr:nth-child(even) {
     padding: 30px 20px;
     border-radius: 18px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .resume-header::before {
     content: "";
