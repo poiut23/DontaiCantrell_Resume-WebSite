@@ -98,6 +98,7 @@ ul li {
     border: none;
     border-bottom: 1px solid #665544;
     padding: 5px 0;
+
 }
 
 a.projects-list:link {
@@ -115,9 +116,13 @@ a.projects-list:hover {
 }
 
 a.projects-read-about:link {
-    color: rgb(45, 112, 154);
+    float: inline-end;
+    overflow: auto;
+    color: rgb(4, 134, 215);
     text-decoration: none;
     font-size: 14px;
+    margin: 0 auto;
+
 }
 
 /* Skills Section */
