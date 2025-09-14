@@ -1,3 +1,4 @@
+/*This will style the body */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -6,12 +7,15 @@ body {
     color: #333;
 }
 
+
+/*This will style the section headings */
 section>h2 {
     color: rgb(0, 0, 0);
     text-align: center;
     text-size-adjust: 200%;
     text-decoration: wavy underline;
     margin: 0 5px 0 5px;
+    z-index: 10;
 }
 
 /* Professional Experience Section */
@@ -22,6 +26,7 @@ section>h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+     z-index: 10;
 }
 
 section.experience-section {
@@ -47,6 +52,7 @@ section.experience-section {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+     z-index: 10;
 }
 section.education-section {
     border-style: inset;
@@ -70,6 +76,7 @@ section.education-section {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
+     z-index: 10;
 }
 
 section.projects-section {
@@ -109,6 +116,15 @@ a.projects-list:hover {
 
 
 /* Skills Section */
+
+#skills {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+
 #skills p {
     display: block;
     margin-block-start: 1em;
@@ -117,13 +133,6 @@ a.projects-list:hover {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
-
-#skills {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
 
 section.skills-section {
     border-style: inset;
@@ -189,4 +198,18 @@ table.skills-table th {
 }
 table.skills-table tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+/* Contact Section */
+    *.fa {
+        border-radius: 100px;
+        padding: 5px;
+        background-color: #6CF2AE;
+    }
+
+#contact h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-size-adjust: 200%;
+    margin: 0 5px 0 5px;
 }
