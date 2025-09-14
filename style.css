@@ -15,8 +15,8 @@ body {
     font-weight: bold;
     text-align: center;
     text-size-adjust: 300%;
-        margin: 0 auto;
-        z-index: 10;
+    margin: 0 auto;
+     z-index: 10;
 }
 section>h2 {
     color: rgb(0, 0, 0);
@@ -294,7 +294,7 @@ table.skills-table tr:nth-child(even) {
     transform: translate(-50%, -50%);
     margin: 0;
     color: #222;
-    font-size: 2.5em;
+    font-size: 80px;
     font-weight: bold;
     z-index: 2;
     text-shadow: 0 2px 8px rgba(0,0,0,0.15);
