@@ -1,3 +1,42 @@
+/* Fixed and styled header navigation */
+#header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    width: 0 auto;
+    max-width: 0 auto;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    border-radius: 18px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#header a {
+    font-weight: bold;
+    color: #4B0082;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    width: 100%;
+    text-align: left;
+}
+#header a:hover {
+    background: #2e0854;
+    color: #fff;
+}
+body {
+    padding-top: 90px; /* Prevent content from hiding under fixed header */
+}
 /*This will style the body */
 body {
     font-family: Arial, sans-serif;
