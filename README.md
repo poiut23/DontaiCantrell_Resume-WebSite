@@ -32,6 +32,10 @@ Recruiters and visitors can browse the site to learn more about my professional 
 
 This project is licensed under the [MIT License](LICENSE).
 
+## Website Link
+
+[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/)
+
 ---
 
 *Created and maintained by Dontai Cantrell.*
