@@ -244,8 +244,7 @@ table.skills-table tr:nth-child(even) {
 }
 
 
-/*Awesome font*/
-/* Contact Section */
+/* Awesome font(fa), Contact Section */
     *.fa {
         border-radius: 100px;
         padding: 5px;
