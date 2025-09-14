@@ -1,41 +1,17 @@
-/* Neat contact info styling */
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.contact-info li {
-    display: flex;
-    align-items: center;
-    font-size: 1.08em;
-    background: #f7f7fa;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(127,61,149,0.07);
-}
-
-.word-break {
-    word-break: break-all;
-}
-
-.contact-info li a {
-    color: #4B0082;
-    text-decoration: none;
-    margin-left: 5px;
-}
-.contact-info li a:hover {
-    display: flex;
-    align-items: center;
-    color: #2e0854;
-    text-decoration: underline;
-}
-.contact-info li address {
-    font-style: normal;
-    display: inline;
-}
 /* Fixed and styled header navigation */
+body {
+    padding-top: 90px; /* Prevent content from hiding under fixed header */
+}
+/*This will style the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #333;
+}
+
+/* Header Styles */
 #header {
     position: fixed;
     top: 0;
@@ -84,18 +60,6 @@
     background: #2e0854;
     color: #fff;
 }
-body {
-    padding-top: 90px; /* Prevent content from hiding under fixed header */
-}
-/*This will style the body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
-    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    color: #333;
-}
-
 
 /*This will style the section headings */
 
@@ -416,4 +380,43 @@ table.skills-table tr:nth-child(even) {
 .resume-header > * {
     position: relative;
     z-index: 1;
+}
+
+
+/* Neat contact info styling */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 1.08em;
+    background: #f7f7fa;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(127,61,149,0.07);
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.contact-info li a {
+    color: #4B0082;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.contact-info li a:hover {
+    display: flex;
+    align-items: center;
+    color: #2e0854;
+    text-decoration: underline;
+}
+.contact-info li address {
+    font-style: normal;
+    display: inline;
 }
