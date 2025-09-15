@@ -21,7 +21,7 @@ This project is a responsive resume website that provides a modern, interactive 
 
 ## Live Demo
 
-[Link to deployed website if available]
+[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/)
 
 ## How to Use
 
@@ -32,8 +32,6 @@ Recruiters and visitors can browse the site to learn more about my professional 
 This project is licensed under the [MIT License](LICENSE).
 
 ## Website Link
-
-[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/)
 
 ---
 
