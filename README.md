@@ -1,6 +1,6 @@
 # DontaiCantrell_Resume-WebSite
 
-A professional, web-based resume portfolio for Dontai Cantrell, designed to showcase skills, experience, and achievements to recruiters and potential employers.
+A professional, web-based resume portfolio for Dontai L Cantrell, Jr, designed to showcase skills, experience, and achievements to recruiters and potential employers.
 
 ## Overview
 
@@ -19,9 +19,9 @@ This project is a responsive resume website that provides a modern, interactive 
 - HTML5 & CSS3
 - JavaScript
 
-## Live Demo
+## Live Link
 
-[Link to deployed website if available]
+[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/)
 
 ## How to Use
 
@@ -32,8 +32,6 @@ Recruiters and visitors can browse the site to learn more about my professional 
 This project is licensed under the [MIT License](LICENSE).
 
 ## Website Link
-
-[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/)
 
 ---
 
