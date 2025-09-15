@@ -18,7 +18,6 @@ This project is a responsive resume website that provides a modern, interactive 
 
 - HTML5 & CSS3
 - JavaScript
-- [Add any frameworks/libraries you use, e.g., React, Bootstrap]
 
 ## Live Demo
 
