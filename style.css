@@ -28,8 +28,9 @@ body {
     padding: 6px 12px;
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: flex-end;
 }
+
 #header nav div {
     display: flex;
     flex-direction: column-reverse;
@@ -44,13 +45,6 @@ body {
     padding: 2px 2px;
     min-width: 60px;
     box-sizing: border-box;
-    #header nav div {
-        gap: 2px;
-    }
-    #header a {
-        font-size: 0.95em;
-        padding: 2px 1px;
-    }
     font-size: 1em;
     border-radius: 8px;
     transition: background 0.2s, color 0.2s;
@@ -253,7 +247,7 @@ td {
 table.skills-table {
     width: 50%;
     border-collapse: collapse;
-    border: center;
+    /* border: center; removed invalid value */
     margin: 20px auto;
 }
 
