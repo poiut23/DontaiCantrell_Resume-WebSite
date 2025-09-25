@@ -14,12 +14,12 @@
 
 <body>
     <div class="resume-header">
-        <img src="images/Profile.JPG" alt="Profile Photo" class="profile-img">
-        <div class="background-img-container">
-            <img src="images/abstract-background.jpg" alt="Background Image" class="background-img">
+        <img src="images/Profile.JPG" alt="Profile Photo" class="profile-img" role="presentation"> <!--the role="presentation" attribute indicates that the image is purely decorative and should be ignored by screen readers-->
+        <div class="background-img-container" role="presentation">
+            <img src="images/abstract-background.jpg" alt="Background Image" class="background-img" role="presentation">
             <h1>Resume</h1>
         </div>
-        <ul>
+        <ul role="presentation">
             <li>Dontai L Cantrell, Jr</li>
             <li>Web Developer</li>
             <li>Location: Chicago, IL</li>
@@ -28,9 +28,9 @@
     <!-- 
     lead with and skills projects
 -->
-    <header id="header"> <!--headers should only be used for content like navigation and logos-->
+    <header id="header" role="navigation" > <!--headers should only be used for content like navigation and logos-->
         <nav>
-            <div>
+            <div> 
                 <a href="#experience" class="experience-link">Experience</a>
                 <a href="#skills" class="skill-link">Skills</a>
                 <a href="#education" class="education-link">Education</a>
@@ -61,7 +61,7 @@
             <p>2019 &ndash; Current</p>
             <p>Chicago, Illinois</p>
 
-            <ul>
+            <ul role="presentation">
                 <li>
                     Organized and participated in weekly meal service for homeless individuals, ensuring nutritious food
                     was prepared and served in a respectful environment.
@@ -96,7 +96,7 @@
         <section id="projects" class="projects-section">
             <h2><i class="fa fa-folder-open-o fa-1x"></i>Personal Projects</h2>
             <p>Newest</p>
-            <ul class="list-style">
+            <ul class="list-style" role="presentation">
                 <div class="content-box" <li><a href="https://poiut23.github.io/Door-Game/" target="_blank"
                         class="projects-list">Door Game</a>
                     <a class="projects-read-about" href="https://github.com/poiut23/Door-Game" target="_blank">Read
@@ -176,7 +176,7 @@
                     that require both technical expertise and a customer-oriented approach.
                     I am excited about the possibility of leveraging these skills in a dynamic IT environment.</p>
             </div>
-            <table class="skills-table">
+            <table class="skills-table" role="presentation">
                 <tr>
                     <th>Skill</th>
                 </tr>
