@@ -58,10 +58,20 @@ body {
     border-radius: 8px;
     transition: background 0.2s, color 0.2s;
     text-align: left;
+    transform: translate(calc(var(--magnet-x, 0) * 5px), calc(var(--magnet-y, 0) * 5px));
+    transition: background 0.2s, color 0.2s, transform 0.1s ease-out;
 }
 #header a:hover {
     background: #2e0854;
     color: #fff;
+}
+
+/* Add CSS variables for magnet effect */
+:root {
+	--magnet-x: 0;
+	--magnet-y: 0;
+	--list-x: 0;
+	--list-y: 0;
 }
 
 /*This will style the section headings */
