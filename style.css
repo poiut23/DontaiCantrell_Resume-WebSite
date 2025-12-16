@@ -46,7 +46,10 @@ body {
     gap: 4px;
     flex-wrap: wrap;
     width: auto;
+    transform: translate(calc(var(--list-x, 0) * 10px), calc(var(--list-y, 0) * 10px));
+    transition: transform 0.1s ease-out;
 }
+
 #header a {
     font-weight: bold;
     color: #4B0082;
@@ -56,22 +59,13 @@ body {
     box-sizing: border-box;
     font-size: 1em;
     border-radius: 8px;
-    transition: background 0.2s, color 0.2s;
-    text-align: left;
-    transform: translate(calc(var(--magnet-x, 0) * 5px), calc(var(--magnet-y, 0) * 5px));
     transition: background 0.2s, color 0.2s, transform 0.1s ease-out;
+    text-align: left;
+    transform: translate(calc(var(--magnet-x, 0) * 10px), calc(var(--magnet-y, 0) * 10px));
 }
 #header a:hover {
     background: #2e0854;
     color: #fff;
-}
-
-/* Add CSS variables for magnet effect */
-:root {
-	--magnet-x: 0;
-	--magnet-y: 0;
-	--list-x: 0;
-	--list-y: 0;
 }
 
 /*This will style the section headings */
@@ -80,13 +74,16 @@ body {
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
+    -webkit-text-size-adjust: 300%;
     text-size-adjust: 300%;
     margin: 0 auto;
     z-index: 10;
 }
+
 section>h2 {
     color: rgb(0, 0, 0);
     text-align: center;
+    -webkit-text-size-adjust: 200%;
     text-size-adjust: 200%;
     text-decoration: wavy underline;
     margin: 0 5px 0 5px;
@@ -189,14 +186,17 @@ a.projects-list:hover {
     color: rgb(127, 61, 149);
     text-decoration: underline;
 }
-
 a.projects-read-about:link {
-    float: inline-end;
+    float: right;
     overflow: auto;
     color: rgb(4, 134, 215);
     text-decoration: none;
     font-size: 14px;
     margin: 0 auto;
+}
+
+.hidden-skills {
+    display: none;
 }
 
 /* Skills Section */
@@ -280,14 +280,16 @@ table.skills-table th {
     background-color: #6CF2AE;
     color: white;
 }
-table.skills-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Contact Section */
 #contact h1{
     color: rgb(0, 0, 0);
     text-align: center;
+    -webkit-text-size-adjust: 200%;
+    text-size-adjust: 200%;
+    margin: 0 5px 0 5px;
+#contact h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    -webkit-text-size-adjust: 200%;
     text-size-adjust: 200%;
     margin: 0 5px 0 5px;
 }
