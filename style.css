@@ -280,13 +280,8 @@ table.skills-table th {
     background-color: #6CF2AE;
     color: white;
 }
-#contact h1{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    -webkit-text-size-adjust: 200%;
-    text-size-adjust: 200%;
-    margin: 0 5px 0 5px;
-#contact h1{
+
+#contact h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     -webkit-text-size-adjust: 200%;
