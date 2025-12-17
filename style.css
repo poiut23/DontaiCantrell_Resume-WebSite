@@ -477,7 +477,7 @@ table.skills-table th {
 /* media queries */
 @media (min-width: 1024px) {
     #header {
-        left: 590px;
+        left: 570px;
         transform: none;
         width: 50%;
         max-width: none;
@@ -499,7 +499,7 @@ table.skills-table th {
 
 @media (min-width: 1440px) {
     #header {
-        left: 880px;
+        left: 830px;
         transform: none;
         width: 50%;
         max-width: none;
