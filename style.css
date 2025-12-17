@@ -473,3 +473,26 @@ table.skills-table th {
     font-style: normal;
     display: inline;
 }
+
+/* media queries */
+@media (min-width: 1024px) {
+    #header {
+        left: 800px;
+        transform: none;
+        width: 50%;
+        max-width: none;
+        border-radius: 110px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px 20px;
+    }
+
+    #header nav div {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #header a {
+        min-width: auto;
+    }
+}
