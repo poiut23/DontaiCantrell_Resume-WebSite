@@ -475,8 +475,6 @@ table.skills-table th {
 }
 
 /* media queries */
-
-<<<<<<< HEAD
 @media (max-width: 388px) {
     #header {
     position: fixed;
@@ -496,8 +494,6 @@ table.skills-table th {
     }
 }
 
-=======
->>>>>>> 2bd8d28a0447327aee0f12d604751e7b6ed7f970
 @media (min-width: 425px) {
     #header {
     position: fixed;
