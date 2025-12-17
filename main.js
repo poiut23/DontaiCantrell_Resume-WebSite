@@ -1,11 +1,21 @@
 function documentReady() {
-	// Read More button functionality
-	var btn = document.getElementById('readMoreBtn');
-	var hidden = document.getElementById('hiddenSkills');
+	// Read More button functionality with glow effect
+	const btn = document.getElementById('readMoreBtn');
+	const hidden = document.getElementById('hiddenSkills');
 	if (btn && hidden) {
 		btn.addEventListener('click', function () {
 			hidden.style.display = 'block';
 			btn.style.display = 'none';
+		});
+
+		// Glow effect on mousemove
+		btn.addEventListener('mousemove', (e) => {
+			const rect = btn.getBoundingClientRect();
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
+
+			btn.style.setProperty('--x', `${x}px`);
+			btn.style.setProperty('--y', `${y}px`);
 		});
 	}
 

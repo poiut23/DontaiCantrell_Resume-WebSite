@@ -251,6 +251,8 @@ section.skills-section {
 }
 
 #readMoreBtn {
+    position: relative;
+    overflow: hidden;
     background-color: darkorchid;
     color: rgb(23, 23, 23);
     border: none;
@@ -263,6 +265,18 @@ section.skills-section {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#readMoreBtn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(212, 100, 255, 0.5), transparent);
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 #readMoreBtn:hover {
