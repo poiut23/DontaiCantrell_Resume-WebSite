@@ -499,7 +499,7 @@ table.skills-table th {
 
 @media (min-width: 1440px) {
     #header {
-        left: 830px;
+        left: 740px;
         transform: none;
         width: 50%;
         max-width: none;
