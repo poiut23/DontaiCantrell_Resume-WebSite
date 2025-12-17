@@ -477,14 +477,16 @@ table.skills-table th {
 /* media queries */
 @media (min-width: 1024px) {
     #header {
-        left: 570px;
+        left: auto;
+        right: 0;
         transform: none;
-        width: 50%;
+        width: auto;
         max-width: none;
-        border-radius: 110px;
+        border-radius: 110px 0 0 110px;
         justify-content: flex-start;
         align-items: center;
         padding: 12px 20px;
+        margin-right: 10px;
     }
 
     #header nav div {
@@ -499,14 +501,16 @@ table.skills-table th {
 
 @media (min-width: 1440px) {
     #header {
-        left: 740px;
+        left: auto;
+        right: 0;
         transform: none;
-        width: 50%;
+        width: auto;
         max-width: none;
-        border-radius: 110px;
+        border-radius: 110px 0 0 110px;
         justify-content: flex-start;
         align-items: center;
         padding: 12px 20px;
+        margin-right: 10px;
     }
 
     #header nav div {
@@ -521,14 +525,16 @@ table.skills-table th {
 
 @media (min-width: 2560px) {
     #header {
-        left: 1800px;
+        left: auto;
+        right: 0;
         transform: none;
-        width: 50%;
+        width: auto;
         max-width: none;
-        border-radius: 110px;
+        border-radius: 110px 0 0 110px;
         justify-content: flex-start;
         align-items: center;
         padding: 12px 20px;
+        margin-right: 10px;
     }
 
     #header nav div {
