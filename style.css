@@ -9,15 +9,22 @@
 
 /* Fixed and styled header navigation */
 body {
-    padding-top: 90px; /* Prevent content from hiding under fixed header */
+    padding-top: 90px;
+    /* Prevent content from hiding under fixed header */
 }
+
 /*This will style the body */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    height: 100vh;
+    /* overflow: hidden; */
+    background: black;
+
+    /* margin: 20px; */
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
-    background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    color: #333;
+    /* background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* color: #333;  */
 }
 
 /* Header Styles */
@@ -31,8 +38,8 @@ body {
     min-width: 0;
     max-width: 100px;
     box-sizing: border-box;
-    background: rgba(255,255,255,0.97);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
     border-radius: 18px;
     padding: 6px 12px;
     display: flex;
@@ -63,6 +70,7 @@ body {
     text-align: left;
     transform: translate(calc(var(--magnet-x, 0) * 10px), calc(var(--magnet-y, 0) * 10px));
 }
+
 #header a:hover {
     background: #2e0854;
     color: #fff;
@@ -98,7 +106,7 @@ section>h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-     z-index: 10;
+    z-index: 10;
 }
 
 section.experience-section {
@@ -124,8 +132,9 @@ section.experience-section {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-     z-index: 10;
+    z-index: 10;
 }
+
 section.education-section {
     border-style: inset;
     border-width: 3px;
@@ -148,7 +157,7 @@ section.education-section {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-     z-index: 10;
+    z-index: 10;
 }
 
 section.projects-section {
@@ -186,6 +195,7 @@ a.projects-list:hover {
     color: rgb(127, 61, 149);
     text-decoration: underline;
 }
+
 a.projects-read-about:link {
     float: right;
     overflow: auto;
@@ -228,7 +238,7 @@ section.skills-section {
     padding: 15px;
     -moz-box-shadow: -5px -5px #ffffff;
     -webkit-box-shadow: -5px -5px #bdbdbd;
-    box-shadow: -5px -5px darkorchid;  
+    box-shadow: -5px -5px darkorchid;
 }
 
 #readMoreBtn {
@@ -297,6 +307,7 @@ table.skills-table th {
     border-radius: 18px;
     overflow: hidden;
 }
+
 .contact-info::before {
     content: "";
     position: absolute;
@@ -310,46 +321,50 @@ table.skills-table th {
     opacity: 0.35;
     z-index: 0;
 }
-.contact-info > * {
+
+.contact-info>* {
     position: relative;
     z-index: 1;
 }
 
 
 /* Awesome font(fa) */
-    *.fa {
-        border-radius: 100px;
-        padding: 5px;
-        background-color: #6CF2AE;
-    }
+*.fa {
+    border-radius: 100px;
+    padding: 5px;
+    background-color: #6CF2AE;
+}
 
-    /* Profile and Background Images in Header */
+/* Profile and Background Images in Header */
 .resume-header .profile-img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
     margin: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
 .resume-header .background-img {
     width: 180px;
     height: 60px;
     object-fit: cover;
     border-radius: 12px;
     margin: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 }
 
 .background-img-container {
     position: relative;
     display: inline-block;
 }
+
 .background-img-container .background-img {
     display: block;
     width: 100%;
     height: auto;
 }
+
 .background-img-container h1 {
     position: absolute;
     top: 50%;
@@ -360,7 +375,7 @@ table.skills-table th {
     font-size: 80px;
     font-weight: bold;
     z-index: 2;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Transparent abstract background for header/profile info */
@@ -374,6 +389,7 @@ table.skills-table th {
     flex-direction: column;
     align-items: center;
 }
+
 .resume-header::before {
     content: "";
     position: absolute;
@@ -387,7 +403,8 @@ table.skills-table th {
     opacity: 0.35;
     z-index: 0;
 }
-.resume-header > * {
+
+.resume-header>* {
     position: relative;
     z-index: 1;
 }
@@ -402,13 +419,14 @@ table.skills-table th {
     flex-direction: column;
     gap: 12px;
 }
+
 .contact-info li {
     display: flex;
     align-items: center;
     font-size: 1.08em;
     background: #f7f7fa;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(127,61,149,0.07);
+    box-shadow: 0 1px 4px rgba(127, 61, 149, 0.07);
 }
 
 .word-break {
@@ -420,12 +438,14 @@ table.skills-table th {
     text-decoration: none;
     margin-left: 5px;
 }
+
 .contact-info li a:hover {
     display: flex;
     align-items: center;
     color: #2e0854;
     text-decoration: underline;
 }
+
 .contact-info li address {
     font-style: normal;
     display: inline;
