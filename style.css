@@ -18,13 +18,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     height: 100vh;
-    /* overflow: hidden; */
     background: black;
-
     /* margin: 20px; */
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
     /* background: linear-gradient(to bottom,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     /* color: #333;  */
+}
+
+/* Add this to position p5 canvas in background */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
 /* Header Styles */
@@ -215,7 +224,7 @@ a.projects-read-about:link {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
     margin-bottom: 10px;
-    z-index: 10;
+    z-index: 100;
 }
 
 
