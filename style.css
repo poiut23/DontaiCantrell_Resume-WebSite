@@ -475,6 +475,28 @@ table.skills-table th {
 }
 
 /* media queries */
+
+@media (min-width: 425px) {
+    #header {
+    position: fixed;
+    top: 0;
+    left: 85%;
+    transform: translateX(-50%);
+    z-index: 200;
+    width: 100%;
+    min-width: 0;
+    max-width: 100px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    border-radius: 18px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+}
+
 @media (min-width: 1024px) {
     #header {
         left: auto;
