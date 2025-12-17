@@ -1,6 +1,6 @@
 # DontaiCantrell_Resume-WebSite
 
-A professional, web-based resume portfolio for Dontai L Cantrell, Jr, designed to showcase skills, experience, and achievements to recruiters and potential employers.
+A professional, web-based resume portfolio for Dontai L Cantrell Jr, designed to showcase skills, experience, and achievements to recruiters and potential employers.
 
 ## Overview
 
