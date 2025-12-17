@@ -517,3 +517,26 @@ table.skills-table th {
     #header a {
         min-width: auto;
     }
+}
+
+@media (min-width: 2560px) {
+    #header {
+        left: 1800px;
+        transform: none;
+        width: 50%;
+        max-width: none;
+        border-radius: 110px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px 20px;
+    }
+
+    #header nav div {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #header a {
+        min-width: auto;
+    }
+}
