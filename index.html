@@ -12,9 +12,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <script src="particles.js" defer></script>
     <script src="main.js"></script>
+    <script src="switcher.js" defer></script>
+    <script src="navigation.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <div class="resume-header">
+        <img src="images/Profile.JPG" alt="Profile Photo" class="profile-img" role="presentation">
+        <!--the role="presentation" attribute indicates that the image is purely decorative and should be ignored by screen readers-->
+        <div class="background-img-container" role="presentation">
+            <img src="images/abstract-background.jpg" alt="Background Image" class="background-img" role="presentation">
+            <h1>Resume</h1>
+        </div>
+        <ul role="presentation">
+            <li>Dontai L Cantrell, Jr</li>
+            <li>Web Developer</li>
+            <li>Location: Chicago, IL</li>
+        </ul>
+    </div>
+    <header id="header" role="navigation"> <!--headers should only be used for content like navigation and logos-->
+        <nav>
+            <div>
+                <a href="#experience" class="experience-link">Experience</a>
+                <a href="#skills" class="skill-link">Skills</a>
+                <a href="#education" class="education-link">Education</a>
+                <a href="#projects" class="project-link">Projects</a>
+                <a href="#contact" class="contact-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
     <!-- Control panel for theme switching -->
     <fieldset class="switcher">
         <legend class="switcher__legend">Choose theme</legend>
@@ -69,31 +97,6 @@
         </div>
     </fieldset>
 
-    <!-- header -->
-    <div class="resume-header">
-        <img src="images/Profile.JPG" alt="Profile Photo" class="profile-img" role="presentation">
-        <!--the role="presentation" attribute indicates that the image is purely decorative and should be ignored by screen readers-->
-        <div class="background-img-container" role="presentation">
-            <img src="images/abstract-background.jpg" alt="Background Image" class="background-img" role="presentation">
-            <h1>Resume</h1>
-        </div>
-        <ul role="presentation">
-            <li>Dontai L Cantrell, Jr</li>
-            <li>Web Developer</li>
-            <li>Location: Chicago, IL</li>
-        </ul>
-    </div>
-    <header id="header" role="navigation"> <!--headers should only be used for content like navigation and logos-->
-        <nav>
-            <div>
-                <a href="#experience" class="experience-link">Experience</a>
-                <a href="#skills" class="skill-link">Skills</a>
-                <a href="#education" class="education-link">Education</a>
-                <a href="#projects" class="project-link">Projects</a>
-                <a href="#contact" class="contact-link">Contact</a>
-            </div>
-        </nav>
-    </header>
 
     <!-- Main Content -->
     <main>

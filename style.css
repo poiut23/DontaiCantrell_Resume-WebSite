@@ -590,8 +590,8 @@ table.skills-table th {
 /* switcher styles */
 
 
-/* below is the body styles */
-body {
+/* Theme styles for content sections */
+section, .contact-info {
   --c-glass: #bbbbbc;
   --c-light: #fff;
   --c-dark: #000;
@@ -606,18 +606,16 @@ body {
 
   --saturation: 150%;
 
-  font-size: 20px;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  background: var(--c-bg);
   color: var(--c-content);
+  background-color: var(--c-bg);
 
-  transition: background 400ms cubic-bezier(1, 0, 0.4, 1),
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     color 400ms cubic-bezier(1, 0, 0.4, 1);
 }
 
 /* Dark Theme */
-body:has(input[value="dark"]:checked) {
+body:has(input[value="dark"]:checked) section,
+body:has(input[value="dark"]:checked) .contact-info {
   --c-glass: #bbbbbc;
   --c-light: #fff;
   --c-dark: #000;
@@ -634,7 +632,8 @@ body:has(input[value="dark"]:checked) {
 }
 
 /* Dim Theme */
-body:has(input[value="dim"]:checked) {
+body:has(input[value="dim"]:checked) section,
+body:has(input[value="dim"]:checked) .contact-info {
   --c-light: #99deff;
   --c-dark: #20001b;
   --c-glass: hsl(335 250% 74% / 1);
@@ -653,10 +652,10 @@ body:has(input[value="dim"]:checked) {
 /* Switcher Styles */
 .switcher {
   position: fixed;
-  z-index: 1;
-  top: 40px;
-  left: 50%;
-  translate: -50%;
+  z-index: 250;
+  top: 10px;
+  left: 10px;
+  translate: 0;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -665,7 +664,7 @@ body:has(input[value="dim"]:checked) {
   height: 70px;
   box-sizing: border-box;
   padding: 8px 12px 10px;
-  margin: 0 auto;
+  margin: 0;
   border: none;
   border-radius: 99em;
   font-size: var(--fz);
