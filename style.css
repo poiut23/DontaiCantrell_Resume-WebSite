@@ -515,8 +515,8 @@ table.skills-table th {
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.80);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    border-radius: 18px;
-    padding: 6px 12px;
+    border-radius: 38px;
+    padding: 6px 11px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
