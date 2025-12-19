@@ -607,7 +607,7 @@ section, .contact-info {
   --c-content: #224;
   --c-action: #0052f5;
 
-  --c-bg: #e8e8e9;
+  --c-bg: #000000;
 
   --glass-reflex-dark: 1;
   --glass-reflex-light: 1;
@@ -615,8 +615,9 @@ section, .contact-info {
   --saturation: 150%;
 
   background-color: var(--c-bg);
+  color: var(--c-content);
 
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1);
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1), color 400ms cubic-bezier(1, 0, 0.4, 1);
 }
 
 /* Dark Theme */
