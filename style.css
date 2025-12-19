@@ -597,6 +597,9 @@ table.skills-table th {
 
 /* switcher styles */
 
+.phone-number {
+  color: #000 !important;
+}
 
 /* Theme styles for section boxes only */
 section, .contact-info {
