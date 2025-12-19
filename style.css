@@ -821,7 +821,7 @@ body[data-theme="dim"] .contact-info {
   left: 4px;
   top: 4px;
   display: block;
-  width: 84px;
+  width: 100px;
   height: calc(100% - 10px);
   border-radius: 99em;
   background-color: color-mix(in srgb, var(--c-glass) 36%, transparent);
