@@ -2,6 +2,7 @@
 // p5.js Particle Background
 // ===================================
 
+function documentReady() {
 /*--------------------
 Helpers
 --------------------*/
@@ -159,3 +160,6 @@ p5.js Window Resize
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight)
 }
+
+} // End of documentReady function
+document.addEventListener('DOMContentLoaded', documentReady);
