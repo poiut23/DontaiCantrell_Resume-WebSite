@@ -2,6 +2,11 @@ function documentReady() {
     // Get reference to the switcher element
     const switcher = document.querySelector(".switcher");
 
+    if (!switcher) {
+        console.error("Switcher element not found!");
+        return;
+    }
+
     // Function to track the previously selected radio button option
     const trackPrevious = (el) => {
         // Get all radio buttons within the switcher element
@@ -16,9 +21,11 @@ function documentReady() {
             previousValue = initiallyChecked.getAttribute("c-option");
             // Set the c-previous attribute on the switcher element
             el.setAttribute("c-previous", previousValue);
-            // Save theme preference to localStorage
+            // Save theme preference to localStorage and set data attribute
             const themeValue = initiallyChecked.getAttribute("value");
             localStorage.setItem("theme-preference", themeValue);
+            document.body.setAttribute("data-theme", themeValue);
+            console.log("Initial theme set to:", themeValue);
         }
 
         // Add change event listener to each radio button
@@ -30,9 +37,11 @@ function documentReady() {
                     el.setAttribute("c-previous", previousValue ?? "");
                     // Update previousValue to the newly selected option
                     previousValue = radio.getAttribute("c-option");
-                    // Save theme preference to localStorage
+                    // Save theme preference to localStorage and set data attribute
                     const themeValue = radio.getAttribute("value");
                     localStorage.setItem("theme-preference", themeValue);
+                    document.body.setAttribute("data-theme", themeValue);
+                    console.log("Theme changed to:", themeValue);
                 }
             });
         });
@@ -45,7 +54,13 @@ function documentReady() {
             const radio = switcher.querySelector(`input[value="${savedTheme}"]`);
             if (radio) {
                 radio.checked = true;
+                document.body.setAttribute("data-theme", savedTheme);
+                console.log("Restored theme from storage:", savedTheme);
             }
+        } else {
+            // Set default theme
+            document.body.setAttribute("data-theme", "light");
+            console.log("Set default theme: light");
         }
     };
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -214,11 +216,11 @@ a.projects-read-about:link {
     margin: 0 auto;
 }
 
+/* Skills Section */
 .hidden-skills {
     display: none;
 }
 
-/* Skills Section */
 
 #skills {
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -314,6 +316,8 @@ table.skills-table th {
     color: white;
 }
 
+
+/* Contact Section */
 #contact h1 {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -590,7 +594,7 @@ table.skills-table th {
 /* switcher styles */
 
 
-/* Theme styles for content sections */
+/* Theme styles for section boxes only */
 section, .contact-info {
   --c-glass: #bbbbbc;
   --c-light: #fff;
@@ -606,16 +610,14 @@ section, .contact-info {
 
   --saturation: 150%;
 
-  color: var(--c-content);
   background-color: var(--c-bg);
 
-  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
-    color 400ms cubic-bezier(1, 0, 0.4, 1);
+  transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1);
 }
 
 /* Dark Theme */
-body:has(input[value="dark"]:checked) section,
-body:has(input[value="dark"]:checked) .contact-info {
+body[data-theme="dark"] section,
+body[data-theme="dark"] .contact-info {
   --c-glass: #bbbbbc;
   --c-light: #fff;
   --c-dark: #000;
@@ -629,11 +631,13 @@ body:has(input[value="dark"]:checked) .contact-info {
   --glass-reflex-light: 0.3;
 
   --saturation: 150%;
+
+  background-color: var(--c-bg);
 }
 
 /* Dim Theme */
-body:has(input[value="dim"]:checked) section,
-body:has(input[value="dim"]:checked) .contact-info {
+body[data-theme="dim"] section,
+body[data-theme="dim"] .contact-info {
   --c-light: #99deff;
   --c-dark: #20001b;
   --c-glass: hsl(335 250% 74% / 1);
@@ -647,6 +651,20 @@ body:has(input[value="dim"]:checked) .contact-info {
   --glass-reflex-light: 0.7;
 
   --saturation: 200%;
+
+  background-color: var(--c-bg);
+}
+
+/* Switcher CSS variables for visibility */
+.switcher {
+  --c-glass: #bbbbbc;
+  --c-light: #fff;
+  --c-dark: #000;
+
+  --glass-reflex-dark: 1;
+  --glass-reflex-light: 1;
+
+  --saturation: 150%;
 }
 
 /* Switcher Styles */
@@ -744,8 +762,10 @@ body:has(input[value="dim"]:checked) .contact-info {
 
 .switcher__icon {
   display: block;
-  width: 100%;
+  width: 20px;
+  height: 20px;
   transition: scale 200ms cubic-bezier(0.5, 0, 0, 1);
+  color: var(--c);
 }
 
 .switcher__filter {
