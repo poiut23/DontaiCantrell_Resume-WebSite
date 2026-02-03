@@ -6,7 +6,6 @@
     padding: 0;
     scroll-behavior: smooth;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
 /* Fixed and styled header navigation */
@@ -681,7 +680,7 @@ body[data-theme="dim"] .contact-info {
   z-index: 250;
   top: 10px;
   left: 10px;
-  translate: 0;
+  transform: translate(0, 0);
   display: flex;
   align-items: center;
   gap: 1px;
@@ -694,6 +693,7 @@ body[data-theme="dim"] .contact-info {
   border: none;
   border-radius: 99em;
   font-size: var(--fz);
+  background-color: rgba(187, 187, 188, 0.12);
   background-color: color-mix(in srgb, var(--c-glass) 12%, transparent);
   backdrop-filter: blur(8px) url(#switcher) saturate(var(--saturation));
   -webkit-backdrop-filter: blur(8px) saturate(var(--saturation));
@@ -824,6 +824,7 @@ body[data-theme="dim"] .contact-info {
   width: 129px;
   height: calc(100% - 10px);
   border-radius: 99em;
+  background-color: rgba(187, 187, 188, 0.36);
   background-color: color-mix(in srgb, var(--c-glass) 36%, transparent);
   z-index: -1;
   box-shadow: inset 0 0 0 1px
@@ -859,19 +860,19 @@ body[data-theme="dim"] .contact-info {
 }
 
 .switcher:has(input[c-option="1"]:checked)::after {
-  translate: 0 0;
+  transform: translate(0, 0);
   transform-origin: right;
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+    transform 400ms cubic-bezier(1, 0, 0.4, 1);
   animation: scaleToggle 440ms ease;
 }
 
 .switcher:has(input[c-option="2"]:checked)::after {
-  translate: 76px 0;
+  transform: translate(76px, 0);
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+    transform 400ms cubic-bezier(1, 0, 0.4, 1);
   animation: scaleToggle2 440ms ease;
 }
 
@@ -884,11 +885,11 @@ body[data-theme="dim"] .contact-info {
 }
 
 .switcher:has(input[c-option="3"]:checked)::after {
-  translate: 152px 0;
+  transform: translate(152px, 0);
   transform-origin: left;
   transition: background-color 400ms cubic-bezier(1, 0, 0.4, 1),
     box-shadow 400ms cubic-bezier(1, 0, 0.4, 1),
-    translate 400ms cubic-bezier(1, 0, 0.4, 1);
+    transform 400ms cubic-bezier(1, 0, 0.4, 1);
   animation: scaleToggle3 440ms ease;
 }
 
