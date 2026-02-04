@@ -864,6 +864,6 @@ body[data-theme="dim"] .contact-info {
 
 @media (min-width: 1440px) {
     #header {
-    padding: 12px 20px;
+    padding: 0.1em .01em;
     }
 }
