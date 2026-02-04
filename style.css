@@ -47,7 +47,7 @@ canvas {
     width: 100%;
     box-sizing: border-box;
     background: rgb(65, 62, 62);
-    box-shadow: 0 4px 24px rgba(12, 12, 12, 0.18);
+    box-shadow: 0 4px 24px rgb(0, 0, 0);
   padding: 8px 12px;
 }
 
@@ -481,6 +481,13 @@ table.skills-table th {
     font-style: normal;
     display: inline;
 }
+
+
+
+
+
+
+
 
 
 
