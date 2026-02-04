@@ -10,7 +10,7 @@
 
 /* Fixed and styled header navigation */
 body {
-    padding-top: 90px;
+  padding-top: 100px;
     /* Prevent content from hiding under fixed header */
 }
 
@@ -41,47 +41,48 @@ canvas {
 #header {
     position: fixed;
     top: 0;
-    left: 90%;
-    transform: translateX(-50%);
+  left: 0;
+  right: 0;
     z-index: 200;
     width: 100%;
-    min-width: 0;
-    max-width: 100px;
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.97);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    border-radius: 18px;
-    padding: 6px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    box-shadow: 0 4px 24px rgba(12, 12, 12, 0.18);
+  padding: 8px 12px;
 }
 
-#header nav div {
+#header .site-nav {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 4px;
-    flex-wrap: wrap;
-    width: auto;
-    transform: translate(calc(var(--list-x, 0) * 10px), calc(var(--list-y, 0) * 10px));
-    transition: transform 0.1s ease-out;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
 }
 
-#header a {
+#header .nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  column-gap: 50%;
+  row-gap: 10px;
+}
+
+#header .nav-list a {
     font-weight: bold;
     color: #4B0082;
     text-decoration: none;
-    padding: 2px 2px;
-    min-width: 60px;
+  padding: 6px 8px;
     box-sizing: border-box;
     font-size: 1em;
     border-radius: 8px;
-    transition: background 0.2s, color 0.2s, transform 0.1s ease-out;
+  transition: background 0.2s, color 0.2s;
     text-align: left;
-    transform: translate(calc(var(--magnet-x, 0) * 10px), calc(var(--magnet-y, 0) * 10px));
 }
 
-#header a:hover {
+#header .nav-list a:hover {
     background: #2e0854;
     color: #fff;
 }
@@ -484,113 +485,27 @@ table.skills-table th {
 /* media queries */
 @media (max-width: 388px) {
     #header {
-    position: fixed;
-    top: 0;
-    left: 85%;
-    transform: translateX(-50%);
-    z-index: 200;
-    width: 100%;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.77);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    border-radius: 20px;
-    padding: 6px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  background: rgba(255, 255, 255, 0.77);
+  padding: 6px 10px;
     }
 }
 
 @media (min-width: 425px) {
     #header {
-    position: fixed;
-    top: 0;
-    left: 85%;
-    transform: translateX(-50%);
-    z-index: 200;
-    width: 100%;
-    min-width: 0;
-    max-width: 100px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.80);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    border-radius: 38px;
-    padding: 6px 11px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  background: rgba(255, 255, 255, 0.80);
+  padding: 8px 12px;
     }
 }
 
 @media (min-width: 1024px) {
     #header {
-        left: auto;
-        right: 0;
-        transform: none;
-        width: auto;
-        max-width: none;
-        border-radius: 110px 0 0 110px;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 12px 20px;
-        margin-right: 10px;
-    }
-
-    #header nav div {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    #header a {
-        min-width: auto;
+    padding: 10px 16px;
     }
 }
 
 @media (min-width: 1440px) {
     #header {
-        left: auto;
-        right: 0;
-        transform: none;
-        width: auto;
-        max-width: none;
-        border-radius: 110px 0 0 110px;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 12px 20px;
-        margin-right: 10px;
-    }
-
-    #header nav div {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    #header a {
-        min-width: auto;
-    }
-}
-
-@media (min-width: 2560px) {
-    #header {
-        left: auto;
-        right: 0;
-        transform: none;
-        width: auto;
-        max-width: none;
-        border-radius: 110px 0 0 110px;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 12px 20px;
-        margin-right: 10px;
-    }
-
-    #header nav div {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    #header a {
-        min-width: auto;
+    padding: 12px 20px;
     }
 }
 
@@ -676,11 +591,8 @@ body[data-theme="dim"] .contact-info {
 
 /* Switcher Styles */
 .switcher {
-  position: fixed;
-  z-index: 250;
-  top: 10px;
-  left: 10px;
-  transform: translate(0, 0);
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 1px;
