@@ -39,8 +39,8 @@ canvas {
 
 /* Header Styles */
 #header {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 11.9em; 
   left: 0;
   right: 0;
     z-index: 200;
@@ -48,7 +48,7 @@ canvas {
     box-sizing: border-box;
     background: rgb(65, 62, 62);
     box-shadow: 0 4px 24px rgb(0, 0, 0);
-  padding: 8px 12px;
+  padding: 8px 5px;
 }
 
 #header .site-nav {
