@@ -46,7 +46,7 @@ canvas {
     z-index: 200;
     width: 100%;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgb(65, 62, 62);
     box-shadow: 0 4px 24px rgba(12, 12, 12, 0.18);
   padding: 8px 12px;
 }
@@ -55,7 +55,7 @@ canvas {
     display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2px;
+  gap: 24px;
 }
 
 #header .nav-list {
@@ -66,8 +66,8 @@ canvas {
   flex-wrap: nowrap;
   margin: 0;
   padding: 0;
-  column-gap: 50%;
-  row-gap: 10px;
+  column-gap: 15%;
+  row-gap: 20%;
 }
 
 #header .nav-list a {
