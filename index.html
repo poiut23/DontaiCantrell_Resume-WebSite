@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <script src="particles.js" defer></script>
     <script src="main.js"></script>
+    <script src="navigation.js" defer></script>
     <script src="switcher.js" defer></script>
 </head>
 
@@ -32,44 +33,49 @@
     </div>
     <header id="header" role="navigation"> <!--headers should only be used for content like navigation and logos-->
         <nav class="site-nav">
-            <ul class="nav-list">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                Menu
+            </button>
+            <ul class="nav-list" id="primary-nav">
                 <li><a href="#experience" class="experience-link">Experience</a></li>
                 <li><a href="#skills" class="skill-link">Skills</a></li>
                 <li><a href="#education" class="education-link">Education</a></li>
                 <li><a href="#projects" class="project-link">Projects</a></li>
                 <li><a href="#contact" class="contact-link">Contact</a></li>
+                <li class="nav-switcher">
+                    <!-- Theme Switcher -->
+                    <fieldset class="switcher">
+                        <legend class="switcher__legend">Theme</legend>
+                        <label class="switcher__option">
+                            <input class="switcher__input" type="radio" name="theme" value="light" c-option="1" checked aria-label="Light theme">
+                            <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="5" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </label>
+                        <label class="switcher__option">
+                            <input class="switcher__input" type="radio" name="theme" value="dark" c-option="2" aria-label="Dark theme">
+                            <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+                            </svg>
+                        </label>
+                        <label class="switcher__option">
+                            <input class="switcher__input" type="radio" name="theme" value="dim" c-option="3" aria-label="Dim theme">
+                            <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                            </svg>
+                        </label>
+                    </fieldset>
+                </li>
             </ul>
-            <!-- Theme Switcher -->
-            <fieldset class="switcher">
-                <legend class="switcher__legend">Theme</legend>
-                <label class="switcher__option">
-                    <input class="switcher__input" type="radio" name="theme" value="light" c-option="1" checked aria-label="Light theme">
-                    <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="5" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </label>
-                <label class="switcher__option">
-                    <input class="switcher__input" type="radio" name="theme" value="dark" c-option="2" aria-label="Dark theme">
-                    <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
-                    </svg>
-                </label>
-                <label class="switcher__option">
-                    <input class="switcher__input" type="radio" name="theme" value="dim" c-option="3" aria-label="Dim theme">
-                    <svg class="switcher__icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
-                        <circle cx="12" cy="12" r="3" fill="currentColor"/>
-                    </svg>
-                </label>
-            </fieldset>
         </nav>
     </header>
 
