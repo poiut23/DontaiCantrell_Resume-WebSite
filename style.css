@@ -547,6 +547,7 @@ table.skills-table th {
     background: #f7f7fa;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(127, 61, 149, 0.07);
+  transition: transform 0.2s ease;
 }
 
 .word-break {
@@ -564,6 +565,10 @@ table.skills-table th {
     align-items: center;
     color: #2e0854;
     text-decoration: underline;
+}
+
+.contact-info li:hover {
+  transform: scale(1.02);
 }
 
 .contact-info li address {
