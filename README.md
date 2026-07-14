@@ -21,7 +21,7 @@ This project is a responsive resume website that provides a modern, interactive 
 
 ## Live Link
 
-[Resume](https://poiut23.github.io/DontaiCantrell_Resume-WebSite/index.html)
+[Resume]([https://poiut23.github.io/DontaiCantrell_Resume-WebSite/index.html])
 
 ## How to Use
 
